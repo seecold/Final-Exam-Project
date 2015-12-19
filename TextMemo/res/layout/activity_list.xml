@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/listlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ListActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#333333" >
+
+         <Button
+            android:id="@+id/newMemoBtn"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+			android:background="#000000"
+			android:textColor="#ffffff"
+	        android:textSize="20sp"
+            android:text="@string/subject_stats"
+             />
+                  <Button
+            android:id="@+id/newMemoBtn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:background="#000000"
+			android:textColor="#ffffff"
+	        android:textSize="20sp"
+	        android:layout_weight="1"
+            android:text="새로쓰기"
+             />
+         
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>
